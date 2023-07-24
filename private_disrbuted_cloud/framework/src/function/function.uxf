@@ -1,0 +1,20 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>20</y><w>330</w><h>70</h></coordinates><panel_attributes>Function&lt;RET&gt;
+--
+--
+template&lt;T,ARG&gt; Function()
+int operator()()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>80</y><w>30</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>30</y><w>320</w><h>60</h></coordinates><panel_attributes>/IFunction/
+--
+--
+int operator()() pure_virtual
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>200</y><w>330</w><h>150</h></coordinates><panel_attributes>FreeFunction&lt;RET,ARG&gt;
+--
+RET(T::*m_func)(ARG)
+ARG m_arg
+--
+int operator()() override</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>200</y><w>330</w><h>150</h></coordinates><panel_attributes>MemberFunction&lt;RET,T,ARG&gt;
+--
+RET(T::*m_func)(T* ,ARG)
+T* m_obj
+ARG m_arg
+--
+int operator()() override</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>80</y><w>400</w><h>140</h></coordinates><panel_attributes>lt=-&gt;&gt;</panel_attributes><additional_attributes>10;120;10;80;380;80;380;10</additional_attributes></element></diagram>
